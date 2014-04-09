@@ -1,0 +1,34 @@
+package login;
+
+message Register {
+	required string device_type = 1;
+	required string device_token = 2;
+	required string device_uuid = 3;
+	required string system_version = 4;
+	required string software_version = 5;
+	required string secret_key = 6;
+}
+
+message Response {
+	enum Error {
+		SUCCESS = 0;
+		UNKNOWN_DEVICE = 1;
+	}
+	required Error err = 1;
+	required string user_id = 2;
+	required string user_token = 3;
+}
+
+message Login {
+	required string user_id = 1;
+	required string user_token = 2;
+}
+
+message Result {
+	enum Error {
+		SUCCESS = 0;
+		TOKEN_NOT_AVAILABLE = 1;
+	}
+	required Error err = 1;
+	required string login_token = 2;
+}

@@ -1,0 +1,13 @@
+package chat;
+
+message Send {
+	required int32 message_id = 1;
+	required string to_user = 2;
+	required string content = 3;
+}
+
+message Receive {
+	required int32 message_id = 1;
+	required string from_user = 2;
+	required string content = 3;
+}
