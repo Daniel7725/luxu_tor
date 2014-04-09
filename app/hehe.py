@@ -18,6 +18,8 @@ def main():
         log.error("aaaaaaaaa")
         log.info("vbbbbbbbbb")
         time.sleep(2)
+	
+	print "just for test pull request"
 
 if __name__ == '__main__':
     main()
