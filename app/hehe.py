@@ -20,6 +20,7 @@ def main():
         time.sleep(2)
 	
 	print "just for test pull request"
+	print "the second time to test pull request"
 
 if __name__ == '__main__':
     main()
